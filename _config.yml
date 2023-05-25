@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Songyue Guo"
-description              : "Homepage of Songyue Guo"
+description              : "a second year graduate student of Harbin Institute of Technology (shenzhen), will graduate at late Decemember, 2023. I'm looking forward to Ph.D. position in Computer Science."
 repository               : "Songyue-Guo/Songyue-Guo.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Songyue Guo"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "second year graduate student of Harbin Institute of Technology (shenzhen), will graduate at late Decemember, 2023. I'm looking forward to Ph.D. position in Computer Science."
+  bio              : "stay hungury, stay foolish."
   location         : "Shenzhen, China"
   employer         :
   pubmed           : 
