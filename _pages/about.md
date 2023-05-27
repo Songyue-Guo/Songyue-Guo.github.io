@@ -56,12 +56,12 @@ My research interest includes federated learning, multi-task learning and data m
 - Adaptively aggregate Extremely Biased Model and Non-Extremely Biased Model. 
 </div>
 </div>
-# 🎖 Honors and Awards
+# 🥇 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2021.06 - **now**, M.Eng. in Computer Science and Technology, College of Computer Science and Technology ,Harbin Institute of Technology. Supervisor: [Qing Liao](http://liaoqing.me/)
+- *2021.06 - **now** *, M.Eng. in Computer Science and Technology, College of Computer Science and Technology ,Harbin Institute of Technology. Supervisor: [Qing Liao](http://liaoqing.me/)
 - *2016.09 - 2020.06*, B.Eng. in Software Engineer, College of Software, Shandong University. Supervisor: [Yilong Yin (IET Fellow)](https://faculty.sdu.edu.cn/ylyin). 
 
 # 💬 Invited Talks
@@ -69,4 +69,5 @@ My research interest includes federated learning, multi-task learning and data m
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 📔📑 Research Experiences
-- *2019.05 - 2019.08*, [](https://github.com/), China.
+- *2021.05 - now* [Computer Application Research Center](http://carc.hitsz.edu.cn/), Harbin Institute of Technology, China.
+- *2018.09 - 2020.06*, [Towards Intelligence Mechanism Lab ](https://github.com/](http://time.sdu.edu.cn/), Shandong University, China.
