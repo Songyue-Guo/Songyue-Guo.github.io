@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # Current
-I'm looking for 24-Spring Ph.D. position in Computer Science and Technology. If you are interested at me, please contact me by guosongyue@stu.hit.edu.cn.
+I'm looking for **24-Spring** Ph.D. position in Computer Science and Technology. If you are interested at me, please contact me by guosongyue@stu.hit.edu.cn.
 # Short Bio
 I'm **Songyue Guo**, a second year graduate student at [the Department of Computer Science and Technology](http://carc.hitsz.edu.cn/) <img src='./images/hit.png' style='width: 1em;'>  [Harbin Institute of Technology (Shenzhen)](https://www.hitsz.edu.cn/index.html)(哈尔滨工业大学深圳计算机科学与技术学院), supervised by Prof. [Qing Liao (廖清)](http://liaoqing.me/). I graduated from [School of Software](https://www.sc.sdu.edu.cn/), <img src='./images/sdu.jpg' style='width: 1em;'> Shandong University(山东大学软件学院) with bechalor degree, supervised by [Yilong Yin(尹义龙), IET Fellow](https://faculty.sdu.edu.cn/ylyin).
 
-My research interest includes federated learning, multi-task learning and data mining.  
+**My research interest includes federated learning, multi-task learning and data mining.** 
 
 
 # 🔥 News
