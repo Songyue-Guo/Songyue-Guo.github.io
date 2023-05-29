@@ -57,16 +57,21 @@ My research interest includes federated learning, multi-task learning and data m
 </div>
 </div>
 # 🥇 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.09* First Class Academic Scholarship. 
+- *2022.11* Outstanding Student of HITsz (Practical Learning Award) (21/178).
+- *2020.06* Outstanding Graduate of Shandong University (Top 20%)
+- *2019.05* Advanced Individual for Innovation and Entrepreneurship of Shandong University (20/335)
+- *2018.11* First Prize in Shandong Province, National Undergrduate Mathmetical Contest in Modeling.(Top 10%)
+- *2018.11* Special Prize of Qilu College Students Software Design Contest in Shandong Province (**Top 1/719**)
+- *2017.04* Meritorious Winner of American Collegiate Mathmatical (Top 13%)
+- *2017.04* Outstanding Communist Youth League Member of Shandong University (30/335)
 
 # 📖 Educations
 - *2021.06 - **now** *, M.Eng. in Computer Science and Technology, College of Computer Science and Technology ,Harbin Institute of Technology. Supervisor: [Qing Liao](http://liaoqing.me/)
 - *2016.09 - 2020.06*, B.Eng. in Software Engineer, College of Software, Shandong University. Supervisor: [Yilong Yin (IET Fellow)](https://faculty.sdu.edu.cn/ylyin). 
 
 # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2023.04*, Federated Learning with Gravitation Regulation for Double Imbalance Distribution, DASFAA2023, Tianjin, China. 
 
 # 📔📑 Research Experiences
 - *2021.05 - now* [Computer Application Research Center](http://carc.hitsz.edu.cn/), Harbin Institute of Technology, China.
