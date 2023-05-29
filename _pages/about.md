@@ -67,7 +67,7 @@ My research interest includes federated learning, multi-task learning and data m
 - *2017.04* Outstanding Communist Youth League Member of Shandong University (30/335)
 
 # 📖 Educations
-- *2021.06 - **now** *, M.Eng. in Computer Science and Technology, College of Computer Science and Technology ,Harbin Institute of Technology. Supervisor: [Qing Liao](http://liaoqing.me/)
+- *2021.06 - **now***, M.Eng. in Computer Science and Technology, College of Computer Science and Technology ,Harbin Institute of Technology. Supervisor: [Qing Liao](http://liaoqing.me/)
 - *2016.09 - 2020.06*, B.Eng. in Software Engineer, College of Software, Shandong University. Supervisor: [Yilong Yin (IET Fellow)](https://faculty.sdu.edu.cn/ylyin). 
 
 # 💬 Invited Talks
