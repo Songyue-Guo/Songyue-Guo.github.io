@@ -75,4 +75,4 @@ My research interest includes federated learning, multi-task learning and data m
 
 # 📔📑 Research Experiences
 - *2021.05 - now* [Computer Application Research Center](http://carc.hitsz.edu.cn/), Harbin Institute of Technology, China.
-- *2018.09 - 2020.06*, [Towards Intelligence Mechanism Lab ](https://github.com/](http://time.sdu.edu.cn/), Shandong University, China.
+- *2018.09 - 2020.06*, [Towards Intelligence Mechanism Lab ](http://time.sdu.edu.cn/), Shandong University, China.
