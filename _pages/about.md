@@ -17,17 +17,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 # Current
-I'm looking for **24-Spring** Ph.D. position in Computer Science and Technology. If you are interested at me, please contact me by guosongyue@stu.hit.edu.cn.
+I'm a candidate Ph.D student from HKUST\(Guangzhou\) under the supervision of Prof. [Lei CHEN (陈雷)](https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/CHEN-Lei/leichen). If you are interested at me, please contact me by guosongyue@stu.hit.edu.cn.
 # Short Bio
 I'm **Songyue Guo**, a second year graduate student at [the Department of Computer Science and Technology](http://carc.hitsz.edu.cn/) <img src='./images/hit.png' style='width: 1em;'>  [Harbin Institute of Technology (Shenzhen)](https://www.hitsz.edu.cn/index.html)(哈尔滨工业大学深圳计算机科学与技术学院), supervised by Prof. [Qing Liao (廖清)](http://liaoqing.me/). I graduated from [School of Software](https://www.sc.sdu.edu.cn/), <img src='./images/sdu.jpg' style='width: 1em;'> Shandong University(山东大学软件学院) with bechalor degree, supervised by [Yilong Yin(尹义龙), IET Fellow](https://faculty.sdu.edu.cn/ylyin).
 
-**My research interest includes federated learning, multi-task learning and data mining.** 
+**My research interest includes weak supervision, federated learning, multi-task learning and data mining.** 
 
 
 # 🔥 News
 - *2023.04*: &nbsp;🔔🔔 Report FedGR at DASFAA2023,Tianjin University.
 - *2023.03*: Release code of [FedGR](https://github.com/Songyue-Guo/FedGR).
-- *2022.12*: &nbsp;🎉🎉 One paper are accepted by DASFA2023. 
+- *2022.12*: &nbsp;🎉🎉 One paper are accepted by DASFAA2023. 
 - *2021.05*: &nbsp;🎉🎉 One paper are accepted by Journal of Computer Research and Development. 
 
 # 📝 Publications 
