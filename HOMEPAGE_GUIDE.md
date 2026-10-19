@@ -5,7 +5,7 @@
 在 GitHub 网页上编辑 `_data/homepage.json` 即可更新个人信息、论文、动态、教育和奖励。提交到 main 后沿用仓库原有的 Jekyll / GitHub Pages 构建。无需 Node、React 或数据库。
 
 - `name` / `chinese_name`：姓名；中文名默认留空，请自行填写。
-- `email`：当前沿用旧站公开邮箱，请确认是否更换为 HKUST 邮箱。
+- `email`：统一联系邮箱，当前为 `sguo349@connect.hkust-gz.edu.cn`；首页按钮及页底邮箱自动同步。
 - `portrait`：头像路径；当前沿用旧站图片。
 - `bio` / `background` / `headline`：简介、背景、首页研究标语。
 - `topics`：研究方向，每项包括 `title` 和 `text`。
@@ -19,7 +19,7 @@ JSON 要求双引号；最后一项后面不加逗号。可运行 `python3 -m js
 
 `assets/css/research.css` 顶部定义浅色与深色配色变量。调整 `--accent` 可改变强调色，调整 `--bg` 可改变背景。
 
-页面结构位于 `_layouts/research.html`。`_pages/about.md` 仍负责 `/` 路由和旧 `/about/`、`/about.html` 跳转。全部正文由 Jekyll 生成静态 HTML，关闭 JavaScript 仍然可读；JavaScript 仅提供主题切换和筛选功能。
+页面结构位于 `_layouts/research.html`。`_pages/about.md` 仍负责 `/` 路由和旧 `/about/`、`/about.html` 跳转。全部正文由 Jekyll 生成静态 HTML，关闭 JavaScript 仍然可读；JavaScript 提供主题切换、论文筛选、一次性滚动进入动画和阅读进度。
 
 旧模板、旧图片和原有 Scholar 爬虫均保留。回滚本次 PR 即可恢复原主页。
 
@@ -39,3 +39,19 @@ FQora 元数据来源：HKUST Research Portal，https://researchportal.hkust.edu
 ## 设计来源
 
 参考 Owen Ye 的研究条目层级、Frank Dou 的学术内容组织、Sixiang Chen 的个人介绍与研究分区。页面的布局、配色、装饰图形和实现代码重新设计编写，没有复制其源代码或图片。
+
+## 动画维护（2026-10-19）
+
+- 不需要额外动画库。滚动动画使用 IntersectionObserver 和浏览器原生 Web Animations API。
+- 进入动画的时长为 640 ms，位移为 22 px，逐项间隔 65 ms（最多延迟 195 ms），在 `assets/js/research.js` 的 `reveal` 中修改。CSS 的 `.reveal-pending` 位移与之对应。
+- 悬停、链接下划线、头像边框及短暂的数据流效果位于 CSS 末尾的 Motion 段。数据流只播放三轮。
+- 新增论文、研究方向和动态会自动参加动画，无需逐条设置。
+- 系统开启“减少动态效果”时停用动画；无 JavaScript、缺少浏览器动画支持或打印时正文仍可见。键盘焦点会立即显示对应条目。
+- 内容仍然由 Jekyll 一次生成完整静态 HTML，动画只是阅读时逐项显现，不额外请求论文数据。
+- News 可选填 `url`，自动成为可点击消息。
+- `_layouts/research.html` 的 CSS / JS URL 使用版本参数，修改资源后可更新此参数避免旧缓存。
+
+## 论文信息核对（2026-10-19）
+
+FQora 保留已核实的完整题名和作者顺序，论文入口更新为用户提供的 ACM 页面。
+MEGA 按用户确认加入 NeurIPS 2026 及官方会议链接，使用简称作为标题。当前环境未能读取官方页面，完整题名、作者顺序与其他链接待核对后填入；`authors` 留空时不显示作者行。简述沿用该研究的医学问答证据选择方向。
