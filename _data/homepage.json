@@ -4,7 +4,7 @@
   "role": "Ph.D. Student · Data Science and Analytics",
   "institution": "HKUST (Guangzhou)",
   "location": "Guangzhou, China",
-  "email": "guosongyue@stu.hit.edu.cn",
+  "email": "sguo349@connect.hkust-gz.edu.cn",
   "portrait": "/images/android-chrome-512x512.png",
   "headline": "Learning from data.\nReasoning with evidence.",
   "bio": "I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou), supervised by Prof. Lei Chen. My research explores data-centric AI, language-model systems, and evidence-grounded reasoning.",
@@ -39,8 +39,14 @@
   ],
   "news": [
     {
+      "date": "2026",
+      "text": "MEGA has been accepted to NeurIPS 2026.",
+      "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/152857"
+    },
+    {
       "date": "2025",
-      "text": "FQora appeared in the Companion Proceedings of The Web Conference 2025."
+      "text": "FQora appeared in the Companion Proceedings of The Web Conference 2025.",
+      "url": "https://dl.acm.org/doi/10.1145/3701716.3715177"
     },
     {
       "date": "2023.04",
@@ -53,6 +59,20 @@
   ],
   "publications": [
     {
+      "short": "MEGA",
+      "venue": "NeurIPS 2026",
+      "topic": "Medical QA",
+      "title": "MEGA",
+      "authors": "",
+      "summary": "Compact evidence selection for evidence-grounded medical question answering.",
+      "links": [
+        {
+          "label": "Conference",
+          "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/152857"
+        }
+      ]
+    },
+    {
       "short": "FQora",
       "venue": "WWW 2025 · Demo",
       "topic": "Data markets",
@@ -62,7 +82,7 @@
       "links": [
         {
           "label": "Paper",
-          "url": "https://doi.org/10.1145/3701716.3715177"
+          "url": "https://dl.acm.org/doi/10.1145/3701716.3715177"
         },
         {
           "label": "Code",
