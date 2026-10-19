@@ -1,0 +1,176 @@
+{
+  "name": "Songyue Guo",
+  "chinese_name": "",
+  "role": "Ph.D. Student · Data Science and Analytics",
+  "institution": "HKUST (Guangzhou)",
+  "location": "Guangzhou, China",
+  "email": "guosongyue@stu.hit.edu.cn",
+  "portrait": "/images/android-chrome-512x512.png",
+  "headline": "Learning from data.\nReasoning with evidence.",
+  "bio": "I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou), supervised by Prof. Lei Chen. My research explores data-centric AI, language-model systems, and evidence-grounded reasoning.",
+  "background": "Previously, I studied Computer Science and Technology at Harbin Institute of Technology (Shenzhen), advised by Prof. Qing Liao, and received my bachelor's degree from Shandong University, advised by Prof. Yilong Yin.",
+  "links": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=iyAhca4AAAAJ"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Songyue-Guo"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0009-0005-8579-9484"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Data-centric AI",
+      "text": "Data quality, fair data markets, and learning from heterogeneous data."
+    },
+    {
+      "title": "Language-model systems",
+      "text": "Efficient optimization of language-model workflows for data-intensive tasks."
+    },
+    {
+      "title": "Evidence-grounded reasoning",
+      "text": "Retrieval and evidence selection for reliable question answering."
+    }
+  ],
+  "news": [
+    {
+      "date": "2025",
+      "text": "FQora appeared in the Companion Proceedings of The Web Conference 2025."
+    },
+    {
+      "date": "2023.04",
+      "text": "Presented FedGR at DASFAA 2023 in Tianjin, China."
+    },
+    {
+      "date": "2023.03",
+      "text": "Released the source code for FedGR."
+    }
+  ],
+  "publications": [
+    {
+      "short": "FQora",
+      "venue": "WWW 2025 · Demo",
+      "topic": "Data markets",
+      "title": "FQora: Towards Fair and Quality-based Online Data Marketplace",
+      "authors": "Songyue Guo, Maocheng Li, Zhao Chen, Caleb Chen Cao, Lei Chen",
+      "summary": "A data marketplace that connects data quality with fair pricing for buyers and sellers.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://doi.org/10.1145/3701716.3715177"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Songyue-Guo/FQora_web_demo"
+        }
+      ]
+    },
+    {
+      "short": "FedGR",
+      "venue": "DASFAA 2023",
+      "topic": "Federated learning",
+      "title": "Federated Learning with Gravitation Regulation for Double Imbalance Distribution",
+      "authors": "Songyue Guo, Xu Yang, Jiyuan Feng, Ye Ding, Wei Wang, Yunqing Feng, Qing Liao",
+      "summary": "Gravitation-based regulation addresses quantity and label imbalance across federated clients.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-30637-2_47"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/Songyue-Guo/FedGR"
+        }
+      ]
+    },
+    {
+      "short": "FedAIM",
+      "venue": "Journal of Computer Research and Development",
+      "topic": "Federated learning",
+      "title": "Federated Adaptive Interaction Model for Mixed Distribution Data",
+      "authors": "Songyue Guo, Yangqian Wang, Siyuan Bai, Yongheng Liu, Jun Zhou, Mengge Wang, Qing Liao",
+      "summary": "Adaptive interaction between models trained on differently distributed data.",
+      "links": [
+        {
+          "label": "Publication",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "Current",
+      "title": "Ph.D. · Data Science and Analytics",
+      "school": "HKUST (Guangzhou)",
+      "detail": "Supervisor: Prof. Lei Chen"
+    },
+    {
+      "period": "Graduate studies",
+      "title": "Computer Science and Technology",
+      "school": "Harbin Institute of Technology (Shenzhen)",
+      "detail": "Supervisor: Prof. Qing Liao"
+    },
+    {
+      "period": "2016 – 2020",
+      "title": "B.Eng. · Software Engineering",
+      "school": "Shandong University",
+      "detail": "Supervisor: Prof. Yilong Yin"
+    }
+  ],
+  "awards": [
+    {
+      "date": "2022",
+      "text": "First Class Academic Scholarship"
+    },
+    {
+      "date": "2022",
+      "text": "Outstanding Student of HIT (Shenzhen) · Practical Learning Award"
+    },
+    {
+      "date": "2020",
+      "text": "Outstanding Graduate of Shandong University"
+    },
+    {
+      "date": "2019",
+      "text": "Advanced Individual for Innovation and Entrepreneurship · Shandong University"
+    },
+    {
+      "date": "2018",
+      "text": "First Prize in Shandong Province · National Undergraduate Mathematical Contest in Modeling"
+    },
+    {
+      "date": "2018",
+      "text": "Special Prize · Qilu College Students Software Design Contest"
+    },
+    {
+      "date": "2017",
+      "text": "Meritorious Winner · Mathematical Contest in Modeling"
+    },
+    {
+      "date": "2017",
+      "text": "Outstanding Communist Youth League Member · Shandong University"
+    }
+  ],
+  "talks": [
+    {
+      "date": "2023.04",
+      "text": "Federated Learning with Gravitation Regulation for Double Imbalance Distribution · DASFAA 2023, Tianjin"
+    }
+  ],
+  "experience": [
+    {
+      "date": "From 2021.05",
+      "text": "Computer Application Research Center · Harbin Institute of Technology"
+    },
+    {
+      "date": "2018 – 2020",
+      "text": "Towards Intelligence Mechanism Lab · Shandong University"
+    }
+  ]
+}

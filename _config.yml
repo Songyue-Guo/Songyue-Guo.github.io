@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Songyue Guo"
-description              : "a third year graduate student of Harbin Institute of Technology (shenzhen), will graduate at January, 2024."
+description              : "Ph.D. student at HKUST (Guangzhou), working on data-centric AI and language-model systems."
 repository               : "Songyue-Guo/Songyue-Guo.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Songyue Guo"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "stay hungury, stay foolish."
-  location         : "Shenzhen, China"
+  bio              : "Data-centric AI · Evidence-grounded reasoning"
+  location         : "Guangzhou, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=iyAhca4AAAAJ"
