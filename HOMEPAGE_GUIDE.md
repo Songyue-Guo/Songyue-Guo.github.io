@@ -1,5 +1,13 @@
 # 主页维护指南
 
+## 最简单的修改方法
+
+1. 打开 https://github.com/Songyue-Guo/Songyue-Guo.github.io/edit/main/_data/homepage.json 。
+2. 修改文字；新增论文或动态时复制一条现有记录，改好后放在对应数组最前面。
+3. 点 **Commit changes**，提交到 **main**，等待 GitHub Pages 自动更新。若未更新，查看仓库 Actions 是否为绿色。
+
+日常只需修改这个文件。保留双引号、括号和逗号；数组最后一条后不加逗号。
+
 ## 日常更新
 
 在 GitHub 网页上编辑 `_data/homepage.json` 即可更新个人信息、论文、动态、教育和奖励。提交到 main 后沿用仓库原有的 Jekyll / GitHub Pages 构建。无需 Node、React 或数据库。
@@ -8,6 +16,7 @@
 - `email`：统一联系邮箱，当前为 `sguo349@connect.hkust-gz.edu.cn`；首页按钮及页底邮箱自动同步。
 - `portrait`：头像路径；当前沿用旧站图片。
 - `bio` / `background` / `headline`：简介、背景、首页研究标语。
+- `people_links`：老师姓名与主页地址；简介、背景、教育经历和论文作者中的对应姓名自动变成链接。
 - `topics`：研究方向，每项包括 `title` 和 `text`。
 - `publications`：按展示顺序排列。新增条目复制现有记录，填写 `short`、`venue`、`topic`、`title`、`authors`、`summary`、`links`。主题筛选自动从 `topic` 生成。没有论文或代码链接就不添加对应链接。
 - `news`：新消息放数组开头；日期以字符串形式填写。

@@ -1,0 +1,7 @@
+{%- assign linked_text = include.text | escape -%}
+{%- for person in site.data.homepage.people_links -%}
+  {%- assign person_name = person.name | escape -%}
+  {%- capture person_link -%}<a href="{{ person.url | escape }}" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">{{ person_name }}</a>{%- endcapture -%}
+  {%- assign linked_text = linked_text | replace: person_name, person_link -%}
+{%- endfor -%}
+{{- linked_text -}}
