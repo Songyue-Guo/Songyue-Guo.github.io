@@ -64,3 +64,16 @@ FQora 元数据来源：HKUST Research Portal，https://researchportal.hkust.edu
 
 FQora 保留已核实的完整题名和作者顺序，论文入口更新为用户提供的 ACM 页面。
 MEGA 按用户确认加入 NeurIPS 2026 及官方会议链接，使用简称作为标题。当前环境未能读取官方页面，完整题名、作者顺序与其他链接待核对后填入；`authors` 留空时不显示作者行。简述沿用该研究的医学问答证据选择方向。
+
+## 论文动画缩略图（2026-11-06）
+
+MEGA 使用独立的 HTML / SVG 动画，无第三方动画库。日常数据仍在 `_data/homepage.json`：
+
+- `"animation": "mega"`：使用 MEGA 动画；删除这一字段即恢复原来的文字方框。
+- `"animation_duration": 6000`：动画时长（毫秒），默认 6 秒。全部阶段按比例缩放。
+- 动画进入视野自动播放一次，完成后保留完整的总结示意图；悬停可重播，也可用按钮暂停、继续和重播。
+- 滚出视野或切换标签页时暂停；关闭 JavaScript 或启用“减少动态效果”时显示静态总结图。手机上图块放到论文文字上方。
+
+实现文件：`_includes/paper-visuals/mega.html`（矢量场景）、`assets/css/paper-visuals.css`（尺寸与浅深色）、`assets/js/paper-visuals.js`（四幕时间线与播放控制）。
+
+动画按提供的 pipeline 图展示候选证据、冻结 LLM 的中间隐藏层、四类 IGS 特征、FPTAS 证据子集选择及回答。A/B/C 和两个文档是互补覆盖关系的示意，不是数据集统计或新的算法保证；选择器仍标为 FPTAS，未改称 set-cover 算法。其余论文等待各自的方法图，再增加独立动画。
