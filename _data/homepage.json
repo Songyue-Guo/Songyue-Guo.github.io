@@ -70,7 +70,9 @@
           "label": "Conference",
           "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/152857"
         }
-      ]
+      ],
+      "animation": "mega",
+      "animation_duration": 6000
     },
     {
       "short": "FQora",
