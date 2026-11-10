@@ -1,5 +1,13 @@
 /* Self-contained paper previews; future papers can supply another component. */
-.paper--animated { grid-template-columns: 320px minmax(0, 1fr); align-items: center; }
+.paper--animated { grid-template-columns: 320px minmax(0, 1fr); align-items: start; }
+.paper--animated .paper-content { display: flex; flex-direction: column; align-self: stretch; min-width: 0; }
+.paper--animated .paper-links { margin-top: auto; padding-top: 16px; }
+.paper-highlights { display: grid; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
+.paper-highlights li { border-left: 2px solid #8360ce; padding-left: 12px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.paper-highlights li:nth-child(2) { border-color: #229e82; }
+.paper-highlights strong { color: var(--ink); font-weight: 600; }
+:root[data-theme=dark] .paper-highlights li { border-color: #bba0fa; }
+:root[data-theme=dark] .paper-highlights li:nth-child(2) { border-color: #66d5b4; }
 .paper-visual { margin: 0; min-width: 0; align-self: start; }
 .mega-visual {
   --mv-ink: #24324a; --mv-muted: #66748a; --mv-line: #dce4ee;
@@ -45,6 +53,7 @@
 @media (max-width: 740px) {
   .paper--animated { grid-template-columns: minmax(0, 1fr); gap: 22px; }
   .paper--animated .paper-visual { width: 100%; max-width: 380px; }
+  .paper--animated .paper-links { margin-top: 13px; padding-top: 0; }
   .mega-play { min-height: 38px; min-width: 70px; }
 }
 @media print { .mega-play, .mega-progress { display: none; } .mega-visual { box-shadow: none; break-inside: avoid; } }

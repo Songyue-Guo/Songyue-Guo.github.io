@@ -40,7 +40,7 @@
   "news": [
     {
       "date": "2026",
-      "text": "MEGA has been accepted to NeurIPS 2026.",
+      "text": "Less Evidence, Better Answering has been accepted to NeurIPS 2026.",
       "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/152857"
     },
     {
@@ -59,12 +59,12 @@
   ],
   "publications": [
     {
-      "short": "MEGA",
+      "short": "Less Evidence, Better Answering",
       "venue": "NeurIPS 2026",
       "topic": "Medical QA",
-      "title": "MEGA",
+      "title": "Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA",
       "authors": "",
-      "summary": "Compact evidence selection for evidence-grounded medical question answering.",
+      "summary": "Gain-aware evidence selection for medical QA: analyze hidden-state features, then jointly select a compact, complementary evidence subset.",
       "links": [
         {
           "label": "Conference",
@@ -72,7 +72,17 @@
         }
       ],
       "animation": "mega",
-      "animation_duration": 6000
+      "animation_duration": 8000,
+      "highlights": [
+        {
+          "label": "Hidden-state signals",
+          "text": "Compare query-only and query–evidence representations in a frozen LLM’s middle layers to estimate information gain."
+        },
+        {
+          "label": "Complementary evidence",
+          "text": "A budget-aware FPTAS selector chooses useful evidence jointly, instead of taking a reranker’s top k."
+        }
+      ]
     },
     {
       "short": "FQora",

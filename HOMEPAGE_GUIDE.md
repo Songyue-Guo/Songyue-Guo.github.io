@@ -63,14 +63,16 @@ FQora 元数据来源：HKUST Research Portal，https://researchportal.hkust.edu
 ## 论文信息核对（2026-10-19）
 
 FQora 保留已核实的完整题名和作者顺序，论文入口更新为用户提供的 ACM 页面。
-MEGA 按用户确认加入 NeurIPS 2026 及官方会议链接，使用简称作为标题。当前环境未能读取官方页面，完整题名、作者顺序与其他链接待核对后填入；`authors` 留空时不显示作者行。简述沿用该研究的医学问答证据选择方向。
+Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA 的完整题名由用户于 2026-11-10 确认，保留用户提供的 NeurIPS 2026 官方会议链接。作者顺序与其他链接待核对后填入；`authors` 留空时不显示作者行。方法说明来自用户提供的 pipeline 图。
 
-## 论文动画缩略图（2026-11-06）
+## 论文动画缩略图（2026-11-10）
 
-MEGA 使用独立的 HTML / SVG 动画，无第三方动画库。日常数据仍在 `_data/homepage.json`：
+这篇医学问答论文使用独立的 HTML / SVG 动画，无第三方动画库。日常数据仍在 `_data/homepage.json`：
 
-- `"animation": "mega"`：使用 MEGA 动画；删除这一字段即恢复原来的文字方框。
-- `"animation_duration": 6000`：动画时长（毫秒），默认 6 秒。全部阶段按比例缩放。
+- `"animation": "mega"`：使用当前证据选择动画（`mega` 仅为兼容旧代码保留的内部标识，不是论文名称）；删除这一字段即恢复原来的文字方框。
+- `"animation_duration": 8000`：动画时长（毫秒），默认 8 秒。全部阶段按比例缩放。
+- `highlights`：可选的方法要点数组，每项填写 `label`（短标题）和 `text`（说明）；页面自动显示在摘要下方。完整题名改 `title`，简述改 `summary`。
+- 桌面端图文顶部对齐，右侧链接靠底；手机端自然上下排列，无需手动补空行。
 - 动画进入视野自动播放一次，完成后保留完整的总结示意图；悬停可重播，也可用按钮暂停、继续和重播。
 - 滚出视野或切换标签页时暂停；关闭 JavaScript 或启用“减少动态效果”时显示静态总结图。手机上图块放到论文文字上方。
 

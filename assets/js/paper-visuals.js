@@ -1,4 +1,4 @@
-/* MEGA's six-second storyboard. No third-party player or animation dependency. */
+/* Eight-second evidence-selection storyboard. No third-party player or animation dependency. */
 (() => {
   'use strict';
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -9,7 +9,7 @@
     const button = card.querySelector('.mega-play');
     const label = card.querySelector('[data-play-label]');
     const icon = card.querySelector('.mega-play-icon');
-    const duration = Math.min(15000, Math.max(3000, Number(card.dataset.duration) || 6000));
+    const duration = Math.min(15000, Math.max(3000, Number(card.dataset.duration) || 8000));
     let animations = [], state = 'idle', inView = false, seen = false, userPaused = false;
     let startTimer = 0;
     const updateButton = () => {
@@ -17,7 +17,7 @@
       const playing = state === 'playing';
       label.textContent = playing ? 'Pause' : state === 'paused' ? 'Play' : 'Replay';
       icon.textContent = playing ? 'Ⅱ' : state === 'paused' ? '▷' : '↻';
-      button.setAttribute('aria-label', (playing ? 'Pause' : state === 'paused' ? 'Resume' : 'Replay') + ' MEGA method animation');
+      button.setAttribute('aria-label', (playing ? 'Pause' : state === 'paused' ? 'Resume' : 'Replay') + ' evidence-selection animation');
       card.dataset.playback = state;
     };
     const cancelTimer = () => { clearTimeout(startTimer); startTimer = 0; };
@@ -58,7 +58,7 @@
       if (motion.matches || document.hidden) return;
       stop(); seen = true;
       try {
-        // 0–1.3 s: candidate evidence; reranking fades as the hidden-state route opens.
+        // Stage 1: candidate evidence; reranking fades as the hidden-state route opens.
         opacity('scene-pool', [[0,1],[.185,1],[.22,0],[1,0]]);
         opacity('scene-features', [[0,0],[.19,0],[.22,1],[.515,1],[.55,0],[1,0]]);
         opacity('scene-selection', [[0,0],[.525,0],[.555,1],[.825,1],[.86,0],[1,0]]);
@@ -66,7 +66,7 @@
         for (let i=0; i<6; i++) appear('pool-doc-' + i, .012 + i*.014, 12);
         opacity('rank-route', [[0,.7],[.08,.7],[.16,.22],[1,.22]]);
         appear('hidden-route', .075, 6);
-        // 1.3–3.2 s: middle-layer activations produce four information-gain features.
+        // Stage 2: middle-layer activations produce four information-gain features.
         for (let i=0; i<5; i++) track('layer-' + i, [
           {offset:0,opacity:.35,transform:'translateY(0)'},
           {offset:.23+i*.018,opacity:.35,transform:'translateY(0)'},
@@ -84,7 +84,7 @@
           {offset:1,opacity:0,transform:'translateX(315px)'}
         ]);
         appear('gain-node', .41, 0);
-        // 3.2–5.1 s: joint selection. Two complementary documents cover A/B/C.
+        // Stage 3: joint selection. Two complementary documents cover A/B/C.
         for (let i=0; i<6; i++) {
           const selected = i===1 || i===4;
           track('candidate-' + i, [
@@ -100,7 +100,7 @@
         appear('set-connectors', .64, 0);
         appear('covered-A', .67, 0); appear('covered-B', .69, 0); appear('covered-C', .75, 0);
         appear('set-count', .76, 0);
-        // 5.1–6 s: selected evidence supports the cited answer; retain this frame.
+        // Stage 4: selected evidence supports the cited answer; retain this frame.
         appear('result-doc-1', .845, 8); appear('result-doc-2', .865, 8);
         appear('result-flow', .88, 0); appear('result-answer', .90, 6);
         const clock = track('progress', [{transform:'scaleX(0)'},{transform:'scaleX(1)'}]);
