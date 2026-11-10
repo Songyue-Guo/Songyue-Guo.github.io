@@ -64,7 +64,7 @@
       "topic": "Medical QA",
       "title": "Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA",
       "authors": "",
-      "summary": "Gain-aware evidence selection for medical QA: analyze hidden-state features, then jointly select a compact, complementary evidence subset.",
+      "summary": "Hidden-state information gain guides budget-aware, complementary evidence selection for medical QA.",
       "links": [
         {
           "label": "Conference",
@@ -73,16 +73,13 @@
       ],
       "animation": "mega",
       "animation_duration": 8000,
-      "highlights": [
-        {
-          "label": "Hidden-state signals",
-          "text": "Compare query-only and query–evidence representations in a frozen LLM’s middle layers to estimate information gain."
-        },
-        {
-          "label": "Complementary evidence",
-          "text": "A budget-aware FPTAS selector chooses useful evidence jointly, instead of taking a reranker’s top k."
-        }
-      ]
+      "figure": {
+        "src": "/assets/images/papers/medical-qa-pipeline.webp",
+        "alt": "Pipeline: hybrid retrieval, frozen LLM hidden-state feature analysis, information-gain scoring, and FPTAS evidence subset selection before answer generation.",
+        "width": 1990,
+        "height": 808,
+        "label": "Full pipeline"
+      }
     },
     {
       "short": "FQora",

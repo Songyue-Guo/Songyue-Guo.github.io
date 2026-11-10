@@ -79,3 +79,9 @@ Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection fo
 实现文件：`_includes/paper-visuals/mega.html`（矢量场景）、`assets/css/paper-visuals.css`（尺寸与浅深色）、`assets/js/paper-visuals.js`（四幕时间线与播放控制）。
 
 动画按提供的 pipeline 图展示候选证据、冻结 LLM 的中间隐藏层、四类 IGS 特征、FPTAS 证据子集选择及回答。A/B/C 和两个文档是互补覆盖关系的示意，不是数据集统计或新的算法保证；选择器仍标为 FPTAS，未改称 set-cover 算法。其余论文等待各自的方法图，再增加独立动画。
+
+## 右侧论文原图（2026-11-10）
+
+医学问答论文的右侧介绍区显示原始 pipeline 缩略图，点击可放大查看；弹窗支持放大、恢复适配、Esc 或按钮关闭。左侧仍保留 8 秒动画。无 JavaScript 时，点击直接打开原图。
+
+日常只需在论文记录中填写 `figure`：`src` 为仓库图片路径，`alt` 为图片说明，`width` / `height` 为原图尺寸，`label` 为缩略图下方文字。替换图片时上传到 `assets/images/papers/`，再修改 `figure.src`。删除 `figure` 字段即可隐藏原图，不影响动画。当前原图为用户提供的 pipeline，采用无损 WebP 编码。
