@@ -1,11 +1,14 @@
-/* Eight-second evidence-selection storyboard. No third-party player or animation dependency. */
+/* Eight-second paper storyboards. No third-party player or animation dependency. */
 (() => {
   'use strict';
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   if (typeof Element.prototype.animate !== 'function') return;
 
-  document.querySelectorAll('[data-paper-animation="mega"]').forEach(card => {
+  document.querySelectorAll('[data-paper-animation]').forEach(card => {
+    const kind = card.dataset.paperAnimation;
+    if (kind !== 'mega' && kind !== 'fqora') return;
+    const animationName = kind === 'fqora' ? ' FQora market animation' : ' evidence-selection animation';
     const button = card.querySelector('.mega-play');
     const label = card.querySelector('[data-play-label]');
     const icon = card.querySelector('.mega-play-icon');
@@ -17,7 +20,7 @@
       const playing = state === 'playing';
       label.textContent = playing ? 'Pause' : state === 'paused' ? 'Play' : 'Replay';
       icon.textContent = playing ? 'Ⅱ' : state === 'paused' ? '▷' : '↻';
-      button.setAttribute('aria-label', (playing ? 'Pause' : state === 'paused' ? 'Resume' : 'Replay') + ' evidence-selection animation');
+      button.setAttribute('aria-label', (playing ? 'Pause' : state === 'paused' ? 'Resume' : 'Replay') + animationName);
       card.dataset.playback = state;
     };
     const cancelTimer = () => { clearTimeout(startTimer); startTimer = 0; };
@@ -58,6 +61,63 @@
       if (motion.matches || document.hidden) return;
       stop(); seen = true;
       try {
+
+        if (kind === 'fqora') {
+          // One persistent market; information, prices and utilities change over eight seconds.
+          appear('fq-seller', .01, 7); appear('fq-buyer', .04, 7); appear('fq-arbiter', .10, 5);
+          opacity('fq-phase-query', [[0,1],[.21,1],[.24,0],[1,0]]);
+          opacity('fq-phase-price', [[0,0],[.21,0],[.25,1],[.44,1],[.48,0],[1,0]]);
+          opacity('fq-phase-balance', [[0,0],[.44,0],[.48,1],[.80,1],[.84,0],[1,0]]);
+          opacity('fq-phase-result', [[0,0],[.80,0],[.85,1],[1,1]]);
+          track('fq-query-packet', [
+            {offset:0,opacity:0,transform:'translateX(0)'},
+            {offset:.10,opacity:0,transform:'translateX(0)'},
+            {offset:.13,opacity:1,transform:'translateX(0)'},
+            {offset:.22,opacity:1,transform:'translateX(-24px)'},
+            {offset:.24,opacity:0,transform:'translateX(-24px)'},
+            {offset:1,opacity:0,transform:'translateX(-24px)'}
+          ]);
+          track('fq-data-packet', [
+            {offset:0,opacity:0,transform:'translateX(0)'},
+            {offset:.20,opacity:0,transform:'translateX(0)'},
+            {offset:.23,opacity:1,transform:'translateX(0)'},
+            {offset:.32,opacity:1,transform:'translateX(24px)'},
+            {offset:.34,opacity:0,transform:'translateX(24px)'},
+            {offset:1,opacity:0,transform:'translateX(24px)'}
+          ]);
+          track('fq-halo', [
+            {offset:0,opacity:0,transform:'scale(.9)'},
+            {offset:.26,opacity:0,transform:'scale(.9)'},
+            {offset:.32,opacity:.6,transform:'scale(1)'},
+            {offset:.42,opacity:0,transform:'scale(1.2)'},
+            {offset:.46,opacity:0,transform:'scale(.9)'},
+            {offset:.53,opacity:.5,transform:'scale(1)'},
+            {offset:.65,opacity:0,transform:'scale(1.2)'},
+            {offset:.69,opacity:0,transform:'scale(.9)'},
+            {offset:.74,opacity:.4,transform:'scale(1)'},
+            {offset:.84,opacity:0,transform:'scale(1.2)'},
+            {offset:1,opacity:0,transform:'scale(1.2)'}
+          ]);
+          // Schematic utility trade-offs, settling near one another without implying equality.
+          track('fq-seller-utility', [
+            {offset:0,opacity:.4,transform:'scaleX(.35)'},
+            {offset:.30,opacity:.4,transform:'scaleX(.35)'},
+            {offset:.42,opacity:1,transform:'scaleX(1.25)'},
+            {offset:.58,opacity:1,transform:'scaleX(.72)'},
+            {offset:.72,opacity:1,transform:'scaleX(1.10)'},
+            {offset:.83,opacity:1,transform:'scaleX(1)'},
+            {offset:1,opacity:1,transform:'scaleX(1)'}
+          ]);
+          track('fq-buyer-utility', [
+            {offset:0,opacity:.4,transform:'scaleX(1.2)'},
+            {offset:.30,opacity:.4,transform:'scaleX(1.2)'},
+            {offset:.42,opacity:1,transform:'scaleX(.55)'},
+            {offset:.58,opacity:1,transform:'scaleX(1.15)'},
+            {offset:.72,opacity:1,transform:'scaleX(.92)'},
+            {offset:.83,opacity:1,transform:'scaleX(1)'},
+            {offset:1,opacity:1,transform:'scaleX(1)'}
+          ]);
+        } else {
         // Stage 1: candidate evidence; reranking fades as the hidden-state route opens.
         opacity('scene-pool', [[0,1],[.185,1],[.22,0],[1,0]]);
         opacity('scene-features', [[0,0],[.19,0],[.22,1],[.515,1],[.55,0],[1,0]]);
@@ -103,6 +163,7 @@
         // Stage 4: selected evidence supports the cited answer; retain this frame.
         appear('result-doc-1', .845, 8); appear('result-doc-2', .865, 8);
         appear('result-flow', .88, 0); appear('result-answer', .90, 6);
+        }
         const clock = track('progress', [{transform:'scaleX(0)'},{transform:'scaleX(1)'}]);
         if (!clock) { stop(); return; }
         clock.onfinish = () => {

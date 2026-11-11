@@ -63,7 +63,7 @@ FQora 元数据来源：HKUST Research Portal，https://researchportal.hkust.edu
 ## 论文信息核对（2026-10-19）
 
 FQora 保留已核实的完整题名和作者顺序，论文入口更新为用户提供的 ACM 页面。
-Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA 的完整题名由用户于 2026-11-10 确认，保留用户提供的 NeurIPS 2026 官方会议链接。作者顺序与其他链接待核对后填入；`authors` 留空时不显示作者行。方法说明来自用户提供的 pipeline 图。
+Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA 的完整题名由用户于 2026-11-10 确认，保留用户提供的 NeurIPS 2026 官方会议链接。作者顺序已按用户于 2026-11-11 提供的名单更新为 Songyue Guo、Zhao Chen、Caleb Chen Cao、Lei Chen；其他链接可在确认后补充。方法说明来自用户提供的 pipeline 图。
 
 ## 论文动画缩略图（2026-11-10）
 
@@ -72,7 +72,7 @@ Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection fo
 - `"animation": "mega"`：使用当前证据选择动画（`mega` 仅为兼容旧代码保留的内部标识，不是论文名称）；删除这一字段即恢复原来的文字方框。
 - `"animation_duration": 8000`：动画时长（毫秒），默认 8 秒。全部阶段按比例缩放。
 - `highlights`：可选的方法要点数组，每项填写 `label`（短标题）和 `text`（说明）；页面自动显示在摘要下方。完整题名改 `title`，简述改 `summary`。
-- 桌面端图文顶部对齐，右侧链接靠底；手机端自然上下排列，无需手动补空行。
+- 桌面端图文顶部对齐，右侧方法说明与配图并排；较窄屏幕自动改为上下排列，无需手动补空行。
 - 动画进入视野自动播放一次，完成后保留完整的总结示意图；悬停可重播，也可用按钮暂停、继续和重播。
 - 滚出视野或切换标签页时暂停；关闭 JavaScript 或启用“减少动态效果”时显示静态总结图。手机上图块放到论文文字上方。
 
@@ -80,8 +80,17 @@ Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection fo
 
 动画按提供的 pipeline 图展示候选证据、冻结 LLM 的中间隐藏层、四类 IGS 特征、FPTAS 证据子集选择及回答。A/B/C 和两个文档是互补覆盖关系的示意，不是数据集统计或新的算法保证；选择器仍标为 FPTAS，未改称 set-cover 算法。其余论文等待各自的方法图，再增加独立动画。
 
-## 右侧论文原图（2026-11-10）
+## 图文结合的论文展示（2026-11-11）
 
-医学问答论文的右侧介绍区显示原始 pipeline 缩略图，点击可放大查看；弹窗支持放大、恢复适配、Esc 或按钮关闭。左侧仍保留 8 秒动画。无 JavaScript 时，点击直接打开原图。
+两篇近期论文均使用左侧 8 秒方法动画、右侧标题 / 作者 / 简述 / 方法要点与配图的结构。右侧图与文字并排展示，不再使用横跨整栏的白色图片框；点击配图仍可放大。
 
-日常只需在论文记录中填写 `figure`：`src` 为仓库图片路径，`alt` 为图片说明，`width` / `height` 为原图尺寸，`label` 为缩略图下方文字。替换图片时上传到 `assets/images/papers/`，再修改 `figure.src`。删除 `figure` 字段即可隐藏原图，不影响动画。当前原图为用户提供的 pipeline，采用无损 WebP 编码。
+只需编辑 `_data/homepage.json`：
+- `authors`：按顺序填写作者。已配置的老师姓名会自动带主页链接。
+- `summary`：一句话介绍核心目标。
+- `highlights`：两条简短方法说明，分别填写 `label` 和 `text`，配图自动排列在旁边。
+- `figure`：`src`（图片路径）、`alt`（替代文字）、`width` / `height`（原图尺寸）和 `label`（查看入口文字）。删除该字段即可仅显示说明。
+- `animation`：`mega` 对应医学问答动画，`fqora` 对应 FQora 市场动画。`animation_duration: 8000` 表示 8 秒。
+
+FQora 动画与简化框架图按用户提供的 Figure 1 编写，展示 seller、arbiter、buyer、质量约束查询、价格锚点及 BPO 效用平衡。效用条只表示调整过程，不是实验数据，也不声称双方效用数值相等。简化框架图是可编辑 SVG，位于 `assets/images/papers/fqora-framework.svg`。
+
+FQora 动画位于 `_includes/paper-visuals/fqora.html`。两套动画共用 `assets/js/paper-visuals.js` 的暂停、重播、视野与减少动态效果设置；医学问答动画的四幕逻辑保持不变。

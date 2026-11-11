@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
+<title id="title">FQora: quality-aware pricing balances seller and buyer utilities</title>
+<desc id="desc">A schematic adapted from the supplied framework. Sellers supply data and price anchors. Buyers supply queries, quality requirements and valuations. The arbiter matches data, prices queries and balances utilities with BPO. Outputs include seller revenue, buyer value and arbiter utility.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 8 8" markerWidth="7" markerHeight="7" refX="7" refY="4" orient="auto"><path d="M1 1L7 4L1 7" fill="none" stroke="#7792a7" stroke-width="1.5"/></marker>
+</defs>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="10" y="15" width="240" height="216" rx="18" fill="#f4eefb" stroke="#b899d0" stroke-width="1.5"/>
+<circle cx="35" cy="43" r="6" fill="#9261b0"/><text x="50" y="50" fill="#29384b" font-size="23" font-weight="700">Seller</text>
+<text x="30" y="78" fill="#6a6375" font-size="14">Data assets</text>
+<g fill="#e2cfef" stroke="#a477bd" stroke-width="1.5"><rect x="34" y="105" width="59" height="44" rx="5"/><rect x="47" y="98" width="59" height="44" rx="5"/><rect x="60" y="91" width="59" height="44" rx="5"/></g>
+<path d="M70 104h38m-38 10h24m-24 10h32" stroke="#a477bd" stroke-width="2"/>
+<text x="140" y="109" fill="#72518a" font-size="14">Price</text><text x="140" y="129" fill="#72518a" font-size="14">anchors</text>
+<rect x="30" y="167" width="200" height="42" rx="9" fill="#e6d6f0"/><text x="130" y="193" text-anchor="middle" fill="#795095" font-size="15" font-weight="600">Seller revenue</text>
+
+<rect x="330" y="15" width="300" height="216" rx="18" fill="#ecf3fb" stroke="#8bacd0" stroke-width="1.5"/>
+<circle cx="355" cy="43" r="6" fill="#4486bf"/><text x="370" y="50" fill="#29384b" font-size="23" font-weight="700">Arbiter</text>
+<circle cx="359" cy="91" r="11" fill="#d5e6f5"/><text x="359" y="96" text-anchor="middle" fill="#4486bf" font-size="13" font-weight="700">1</text><text x="380" y="96" fill="#435c72" font-size="17">Match data to the query</text>
+<circle cx="359" cy="129" r="11" fill="#d5e6f5"/><text x="359" y="134" text-anchor="middle" fill="#4486bf" font-size="13" font-weight="700">2</text><text x="380" y="134" fill="#435c72" font-size="17">Price the query with π</text>
+<rect x="348" y="161" width="264" height="50" rx="10" fill="#fff"/>
+<circle cx="365" cy="186" r="5" fill="#9261b0"/><circle cx="382" cy="186" r="5" fill="#57a67a"/>
+<text x="398" y="183" fill="#29384b" font-size="16" font-weight="700">Balance utilities</text><text x="398" y="200" fill="#6a7a8a" font-size="12">BPO updates pricing</text>
+
+<rect x="710" y="15" width="240" height="216" rx="18" fill="#eff7ef" stroke="#9cc39f" stroke-width="1.5"/>
+<circle cx="735" cy="43" r="6" fill="#57a67a"/><text x="750" y="50" fill="#29384b" font-size="23" font-weight="700">Buyer</text>
+<text x="730" y="78" fill="#617166" font-size="14">Query + quality requirements</text>
+<rect x="730" y="91" width="200" height="55" rx="7" fill="#fff"/><text x="743" y="113" font-family="monospace" fill="#4b8563" font-size="15">SELECT data</text><text x="743" y="134" fill="#6c8d78" font-size="13">with a desired quality</text>
+<rect x="730" y="167" width="200" height="42" rx="9" fill="#dcefdc"/><text x="830" y="193" text-anchor="middle" fill="#4b8563" font-size="15" font-weight="600">Buyer value</text>
+
+<path d="M250 113h72" stroke="#7792a7" stroke-width="2" marker-end="url(#arrow)"/><text x="289" y="100" text-anchor="middle" fill="#708398" font-size="11">anchors</text>
+<path d="M710 113h-72" stroke="#7792a7" stroke-width="2" marker-end="url(#arrow)"/><text x="670" y="100" text-anchor="middle" fill="#708398" font-size="11">query</text>
+<path d="M480 231v33" stroke="#7792a7" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M390 231v47H130v-38" fill="none" stroke="#a477bd" stroke-width="1.5" stroke-dasharray="6 5"/>
+<path d="M570 231v47h260v-38" fill="none" stroke="#70a980" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="480" y="289" text-anchor="middle" fill="#6d7b8a" font-size="14">Arbiter utility</text>
+<text x="255" y="305" text-anchor="middle" fill="#9368a9" font-size="13">Revenue to the seller</text>
+<text x="706" y="305" text-anchor="middle" fill="#5e936b" font-size="13">Value to the buyer</text>
+</g></svg>

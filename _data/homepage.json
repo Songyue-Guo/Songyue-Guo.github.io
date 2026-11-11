@@ -63,8 +63,8 @@
       "venue": "NeurIPS 2026",
       "topic": "Medical QA",
       "title": "Less Evidence, Better Answering: Gain-Aware Minimal Evidence Subset Selection for Medical QA",
-      "authors": "",
-      "summary": "Hidden-state information gain guides budget-aware, complementary evidence selection for medical QA.",
+      "authors": "Songyue Guo, Zhao Chen, Caleb Chen Cao, Lei Chen",
+      "summary": "A compact evidence set selected for joint utility, guided by a frozen LLM’s hidden-state features.",
       "links": [
         {
           "label": "Conference",
@@ -78,8 +78,18 @@
         "alt": "Pipeline: hybrid retrieval, frozen LLM hidden-state feature analysis, information-gain scoring, and FPTAS evidence subset selection before answer generation.",
         "width": 1990,
         "height": 808,
-        "label": "Full pipeline"
-      }
+        "label": "Explore the pipeline"
+      },
+      "highlights": [
+        {
+          "label": "Measure information gain",
+          "text": "Compare query-only and query–evidence representations across the LLM’s middle layers."
+        },
+        {
+          "label": "Select complementary evidence",
+          "text": "A budget-aware FPTAS selector builds the subset, beyond an individually ranked top k."
+        }
+      ]
     },
     {
       "short": "FQora",
@@ -87,7 +97,7 @@
       "topic": "Data markets",
       "title": "FQora: Towards Fair and Quality-based Online Data Marketplace",
       "authors": "Songyue Guo, Maocheng Li, Zhao Chen, Caleb Chen Cao, Lei Chen",
-      "summary": "A data marketplace that connects data quality with fair pricing for buyers and sellers.",
+      "summary": "A quality-aware data marketplace designed to balance seller and buyer utilities.",
       "links": [
         {
           "label": "Paper",
@@ -97,7 +107,26 @@
           "label": "Code",
           "url": "https://github.com/Songyue-Guo/FQora_web_demo"
         }
-      ]
+      ],
+      "animation": "fqora",
+      "animation_duration": 8000,
+      "highlights": [
+        {
+          "label": "Price quality-aware queries",
+          "text": "An arbiter matches data to the buyer’s query and prices it using the seller’s price anchors."
+        },
+        {
+          "label": "Balance both sides",
+          "text": "BPO adjusts pricing to balance the utilities of sellers and buyers."
+        }
+      ],
+      "figure": {
+        "src": "/assets/images/papers/fqora-framework.svg",
+        "alt": "FQora framework: sellers provide data and price anchors; buyers submit quality-aware queries and valuations; an arbiter prices queries and uses BPO to balance market utilities.",
+        "width": 960,
+        "height": 320,
+        "label": "Explore the market"
+      }
     },
     {
       "short": "FedGR",
